@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            background: url('https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')no-repeat top center/cover;
+            color: white;
+        }
+
+        .container1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .heading {
+            font-size: 30px;
+            font-family: 'Caprasimo', cursive;
+            font-size: 40px;
+            color: rgb(231, 54, 54);
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: 40px;
+        }
+
+        .navitems {
+            font-size: 30px;
+            margin: 17px 25px;
+            color: #a8ffff;
+        }
+
+        .navitems:hover {
+            transform: scale(1.4);
+            text-decoration: underline;
+        }
+
+        .container1 .contact {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            right: 0px;
+        }
+
+        .citem {
+            font-size: 25px;
+            font-weight: bold;
+            margin: 20px 25px;
+            color: rgb(231, 54, 54);
+        }
+
+        .citem:hover {
+            transform: scale(1.2);
+            text-decoration: underline;
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .con1 {
+            margin-top: 80px;
+            /* margin-left: 80px; */
+            text-align: center;
+        }
+
+        .con1 h2 {
+            font-size: 34px;
+            margin-bottom: 1%;
+            color: rgb(231, 54, 54);
+        }
+
+        .con1 h3 {
+            margin-top: 0%;
+            font-size: 30px;
+            margin-bottom: 1%;
+            color: #a8ffff;
+        }
+
+        .con1 h3 span {
+            color: rgb(231, 54, 54);
+            font-size: 40px;
+        }
+
+        .con1 span {
+            font-size: 30px;
+            margin-top: 0%;
+            color: #a8ffff;
+            text-align: center;
+        }
+
+        .join {
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+            height: 35%;
+            /* margin-left: 80px; */
+            margin-top: 10px;
+            justify-content: center;
+        }
+
+        .join span {
+            font-size: 30px;
+            margin-top: 3px;
+            color: #a8ffff;
+        }
+
+        .join button {
+            margin: 15px auto;
+            color:#a8ffff ;
+            background-color: #3518186b;
+            border: 2px solid #a8ffff;
+            border-radius: 40px;
+            padding: 6px 15px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        .join button:hover{
+            transform: scale(1.2);
+            padding:5px 20px;
+        }
+        input {
+            height: 30px;
+            font-size: 22px;
+        }
+
+        input[type='radio'] {
+            height: 22px;
+            width: 22px;
+        }
+        footer{
+            text-align: center;
+            color: #93f4f4;
+            font-size: 25px;
+        }
+        footer span{
+            text-decoration: underline;
+            font-size: 35px;
+            color: #49e2fa;
+        }
+        footer span:hover{
+            font-size:38px ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="heading">Hercules Gym</div>
+        <div class="navbar">
+            <div class="navitems">Home</div>
+            <div class="navitems">About</div>
+            <div class="navitems">Trainers</div>
+            <div class="navitems">Packages</div>
+        </div>
+        <div class="contact">
+            <div class="citem">Mail Us</div>
+            <div class="citem">Contact Us</div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="con1">
+            <h2>SHAPE YOUR BODY</h2>
+            <h3>Keep your body <span><b>fit</b></span> & <span><b>strong</b></span></h3>
+            <span>Join the best fitness studio in south india</span><br>
+            <span>with fully equipped world class fitness equipments</span><br>
+            <span>where you can get the best training ever.</span>
+        </div>
+        <div class="join">
+            <span>Name</span><input type="text" id="name">
+            <span>Male<input type="radio" name="gender"> Female<input type="radio" name="gender"></span>
+            <span>Email</span><input type="email" placeholder="example@gmail.com">
+            <span>Address</span><input type="text">
+            <span>Phone Number</span><input type="number" name="phone number" id="phno">
+            <span>Age</span><input type="number">
+            <div class="button">
+                <button type="submit"><span>Submit</span></button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3>For any queries mail us <span>herculesgym31@gmail.com</span></h3>
+    </footer>
+</body>
+
+</html>
